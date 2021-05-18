@@ -6,6 +6,7 @@
         <br />
         <button
           :disabled="!product.inventory"
+          :gtm-product="product.title"
           @click="addProductToCart(product)"
         >
           Add to cart
