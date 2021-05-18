@@ -1,8 +1,9 @@
 <template>
   <div id="app">
+    <h1>Shopping Cart Example</h1>
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">ProductList</router-link> |
+      <router-link to="/shoppint-cart">ShoppintCart</router-link>
     </div>
     <router-view/>
   </div>

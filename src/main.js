@@ -2,6 +2,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import { currency } from './filters/currency'
+
+Vue.filter('currency', currency)
 
 Vue.config.productionTip = false
 
