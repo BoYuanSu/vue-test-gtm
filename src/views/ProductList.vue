@@ -12,6 +12,7 @@
         </button>
       </li>
     </ul>
+    <router-link tag="button" to="/shoppint-cart">cart</router-link>
   </div>
 </template>
 
@@ -20,6 +21,9 @@ import { mapState, mapActions } from 'vuex'
 
 export default {
   name: 'ProductList',
+  metaInfo: {
+    title: 'product'
+  },
   computed: mapState({
     products: state => state.products.all
   }),

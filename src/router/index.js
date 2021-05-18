@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import ProductList from '../views/ProductList.vue'
 import ShoppintCart from '../views/ShoppintCart.vue'
+import ThankYou from '../views/ThankYou.vue'
 
 Vue.use(VueRouter)
 
@@ -18,6 +19,11 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: ShoppintCart
+  },
+  {
+    path: '/thank-you',
+    name: 'ThankYou',
+    component: ThankYou
   }
 ]
 

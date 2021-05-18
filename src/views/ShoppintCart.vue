@@ -20,6 +20,9 @@ import { mapGetters, mapState } from 'vuex'
 
 export default {
   name: 'ShoppintCart',
+  metaInfo: {
+    title: 'Cart'
+  },
   computed: {
     ...mapState({
       checkoutStatus: state => state.cart.checkoutStatus
@@ -32,6 +35,7 @@ export default {
   methods: {
     checkout (products) {
       this.$store.dispatch('cart/checkout', products)
+      this.$router.push('/thank-you')
     }
   }
 }
