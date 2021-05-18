@@ -7,6 +7,6 @@ module.exports = {
     }
   },
   publicPath:
-    process.env.NODE_ENV === 'production' ? '/vuejs-playground/' : '/',
+    process.env.NODE_ENV === 'production' ? '/vue-test-gtm/' : '/',
   lintOnSave: process.env.NODE_ENV !== 'production'
 }
